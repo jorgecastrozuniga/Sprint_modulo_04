@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55371A"
+    tools:context=".MainActivity2">
+
+
+    <Button
+        android:id="@+id/botonin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="57dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:fontFamily="@font/bungee_inline"
+        android:text="@string/in"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/miscontactos"
+        app:layout_constraintEnd_toStartOf="@+id/imagenin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo3" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/botonfab"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginBottom="95dp"
+        android:contentDescription="@string/desflo2"
+        android:text="@string/desflo2"
+        android:textColor="@color/md_theme_dark_inverseSurface"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#42811E"
+        app:layout_constraintBottom_toBottomOf="@+id/botonfab2"
+        app:layout_constraintEnd_toStartOf="@+id/imagenwtsp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/miscontactos" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/botonfab2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="175dp"
+        android:contentDescription="@string/df3"
+        android:text="@string/desflo3"
+        android:textColor="@color/md_theme_dark_inverseSurface"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/md_theme_dark_secondaryContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imagencorreo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenwtsp" />
+
+    <TextView
+        android:id="@+id/titulo3"
+        android:layout_width="401dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="34dp"
+        android:background="@color/md_theme_dark_onPrimary"
+        android:text="@string/titulo3"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_dark_inverseSurface"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/botonin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/miscontactos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="42dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="@string/miscontactos"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_dark_inverseSurface"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imagenwtsp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonin" />
+
+    <ImageView
+        android:id="@+id/imagenin"
+        android:layout_width="0dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonin"
+        app:layout_constraintTop_toBottomOf="@+id/titulo3"
+        app:srcCompat="@drawable/iconoin" />
+
+    <ImageView
+        android:id="@+id/imagenwtsp"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonfab2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonfab"
+        app:layout_constraintTop_toBottomOf="@+id/miscontactos"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <ImageView
+        android:id="@+id/imagencorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonfab2"
+        app:layout_constraintTop_toBottomOf="@+id/botonfab"
+        app:srcCompat="@drawable/correo" />
+
+    <Button
+        android:id="@+id/iconButton"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="82dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#55371A"
+        app:icon="@android:drawable/ic_menu_revert"
+        android:contentDescription="@string/desflovolver"
+        app:iconPadding="30dp"
+        app:iconSize="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/iconButton2"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="82dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#55371A"
+        android:contentDescription="@string/desflocerrar"
+        app:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:iconPadding="30dp"
+        app:iconSize="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textovolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textovolver"
+        android:textColor="@color/md_theme_dark_onSecondaryContainer"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconButton" />
+
+    <TextView
+        android:id="@+id/textocerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/textocerrar"
+        android:textColor="@color/md_theme_dark_inverseSurface"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconButton2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

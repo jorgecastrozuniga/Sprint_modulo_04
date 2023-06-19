@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/amiko</item>
+        <item>@font/atomic_age</item>
+        <item>@font/baloo_paaji</item>
+        <item>@font/bangers</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/bungee_inline</item>
+        <item>@font/give_you_glory</item>
+        <item>@font/imprima</item>
+        <item>@font/limelight</item>
+        <item>@font/meddon</item>
+        <item>@font/nothing_you_could_do</item>
+        <item>@font/walter_turncoat</item>
+    </array>
+</resources>

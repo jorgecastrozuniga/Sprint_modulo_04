@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_dark_inverseOnSurface"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="216dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/md_theme_light_onErrorContainer"
+        android:text="@string/nombre"
+        android:textColor="@color/md_theme_dark_secondary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotografia" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/botonflotante"
+        android:layout_width="56dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/botonflo"
+        app:backgroundTint="@color/md_theme_dark_primaryContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_set_as" />
+
+
+    <ImageView
+        android:id="@+id/fotografia"
+        android:layout_width="328dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foto" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="364dp"
+        android:layout_height="219dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/md_theme_light_onErrorContainer"
+        android:justificationMode="inter_word"
+        android:text="@string/descripcion"
+        android:textAlignment="textStart"
+        android:textColor="@color/md_theme_dark_secondary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textoclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textoclick"
+        android:layout_width="317dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/md_theme_dark_primaryContainer"
+        android:text="@string/rrss"
+        android:textAlignment="textEnd"
+        android:textColor="@color/md_theme_dark_secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcion2"
+        android:layout_width="212dp"
+        android:layout_height="30dp"
+        android:background="@color/md_theme_light_onErrorContainer"
+        android:text="@string/descripcion2"
+        android:textColor="@color/md_theme_dark_onPrimaryContainer"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

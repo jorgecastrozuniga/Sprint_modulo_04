@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Sprint_modulo_05</string>
+    <string name="nombre">      Jorge Castro Zuniga</string>
+    <string name="nombre2">Jorge Castro Zuniga </string>
+    <string name="descripcion">Asesor de negocios, especialista en la elaboración de modelos de negocios y planes de trabajo con indicadores de inversión, formalización, empleabilidad y aumento en ventas. Experiencia como ejecutivo técnico de programas SERCOTEC y CORFO.</string>
+    <string name="botonflo">Contactarme</string>
+    <string name="descripcion2">Experiencia : 10 años</string>
+    <string name="rrss">Para más información hacer Clik en botón</string>
+    <string name="titulo3">MÁS INFORMACIÓN</string>
+    <string name="miscontactos">MIS CONTACTOS</string>
+    <string name="in">Ir a Perfil</string>
+    <string name="wtsp">Enviar mensaje WhatsApp</string>
+    <string name="correo">Enviar Correo</string>
+    <string name="df2">solo llenar</string>
+    <string name="desflo2">Enviar Mensaje WhatsApp</string>
+    <string name="df3">solo llenar</string>
+    <string name="desflo3">Enviar Correo</string>
+    <string name="volver">Volver</string>
+    <string name="desflovolver">cualquier cosa</string>
+    <string name="cerrar">Cerrar App</string>
+    <string name="desflocerrar">cualquier cosa</string>
+    <string name="textovolver">Volver</string>
+    <string name="textocerrar">Cerrar App</string>
+
+
+</resources>

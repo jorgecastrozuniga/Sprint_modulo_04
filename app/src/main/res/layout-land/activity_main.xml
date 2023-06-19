@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_dark_inverseOnSurface"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="735dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/material_dynamic_primary30"
+        android:text="@string/nombre2"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_dark_secondary"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/experiencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/botonflotante"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/botonflo"
+        app:backgroundTint="@color/material_dynamic_neutral_variant60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/experiencia"
+        app:srcCompat="@android:drawable/ic_menu_set_as" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="47dp"
+        android:background="@color/md_theme_light_onErrorContainer"
+        android:justificationMode="inter_word"
+        android:text="@string/descripcion"
+        android:textAlignment="textStart"
+        android:textColor="@color/md_theme_dark_secondary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonflotante"
+        app:layout_constraintTop_toTopOf="@+id/fotografia" />
+
+    <TextView
+        android:id="@+id/experiencia"
+        android:layout_width="347dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="172dp"
+        android:background="@color/md_theme_light_onErrorContainer"
+        android:text="Experiencia : 10 años"
+        android:textColor="@color/md_theme_dark_onSurfaceVariant"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonflotante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotografia"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <ImageView
+        android:id="@+id/fotografia"
+        android:layout_width="336dp"
+        android:layout_height="279dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/experiencia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/foto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
